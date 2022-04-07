@@ -170,7 +170,6 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 ### "attributedText를 적용해준 Label의 Dynamic Type 적용하기"
 
 - `상황` 부분적으로 텍스트 크기 편집해준 글자들이 실시간으로 Dynamic Type이 적용이 안되는 현상이 발생했다.
-- ![](https://i.imgur.com/jjdJzLT.gif) 
 - ![](https://i.imgur.com/jjdJzLT.gif)
 - `이유` 알고보니 편집해준 부분(prefix)을 제외한 나머지 글자의 폰트도 크기뿐만 아니라 다이나믹 타입도 같이 적용해줘야 됬다.
     - 맨 처음 글자의 TextStyle이 title3로 설정되어있는데 addAttribute를 하는 순간 TextStyle이 풀리는 것 같다.
